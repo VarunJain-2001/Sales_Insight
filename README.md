@@ -20,7 +20,7 @@ visual representation to make data driven decisions. So, he hired a team of data
 By using the AIMS grid project management tool, we made sure what are the purpose, stakeholder, end result 
 and success criteria  of our project.
 
-<img src ="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/aims_grid.png">
+<p  align="center"><img src ="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/aims_grid.png">
 
 ### Data Analysis - Approach
 <p  align="center"><a href="https://github.com/VarunJain-2001"><img width="80%" src="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/flowChart.jpg" /></a></p>

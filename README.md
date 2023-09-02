@@ -1,11 +1,4 @@
-# Sales Insight Dashboard using PowerBI
-## Sales insights project Powerbi Dashboard
-
-This project I learn from code basics youtube channel. you can find link is below.
-
-
-[code basics youtube Playlist](https://www.youtube.com/watch?v=hhZ62IlTxYs&list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9)
-
+# Sales Insight Dashboard using PowerBI and TableaU
 
 ## Problem statement
 
@@ -27,7 +20,7 @@ visual representation to make data driven decisions. So, he hired a team of data
 By using the AIMS grid project management tool, we made sure what are the purpose, stakeholder, end result 
 and success criteria  of our project.
 
-<img src ="https://github.com/NotRamm/Sales-Insight-Dashboard-using-Power-BI/blob/master/Screenshots/AIMS%20grid%20sales%20insights.jpg">
+<img src ="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/aims_grid.png">
 
 ## Steps Followed in this project
 
@@ -42,7 +35,7 @@ and success criteria  of our project.
 
 ## Major Changes/ Customizations Made
 
-1.Solved the ‘(blank)’ problem for the products section by deleting the original products table and adding the self-modified products table (where I have added the       Products ranging from Prod280 to Prod339 with their product type (random type- b/w ‘Own Brand’ and ‘Distribution’).
+1.Solved the ‘(blank)’ problem for the products section by deleting the original products table and adding the self-modified products table where I have added the Products ranging from Prod280 to Prod339 with their product type (random type- b/w ‘Own Brand’ and ‘Distribution’).
 2.Merged the original modified ‘sales_transaction’ table with the new ‘sales_transaction’ table having profit margin, cost price, etc.
 
 ###  Insights

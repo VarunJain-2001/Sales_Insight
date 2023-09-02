@@ -1,4 +1,4 @@
-# Sales Insight Dashboard using PowerBI and TableaU
+# India based Hardware company Sales Insight Dashboard using PowerBI and TableaU
 
 ## Problem statement
 
@@ -22,9 +22,27 @@ and success criteria  of our project.
 
 <img src ="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/aims_grid.png">
 
+### Data Analysis - Approach
+<p  align="center"><a href="https://github.com/VarunJain-2001"><img width="80%" src="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/flowChart.jpg" /></a></p>
+
+### Data Analysis - Model Schema
+<p  align="center"><a href="https://github.com/VarunJain-2001"><img width="80%" src="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Images/model_schema.png" /></a></p>
+
+## Technologies used ⚙️
+
+* <a href="https://coursera.org/share/064db4645159df788ad0b31abebf1556">Advance Excel</a><a href="https://coursera.org/share/064db4645159df788ad0b31abebf1556" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/66DaysOfData/60139fb461ef56a19afd68ea4094f6069f27ce49/icons8-microsoft-excel%20(1).svg" alt="excel" width="25" height="25"/> </a>
+
+* <a href="https://www.mysql.com/">MySQL</a><a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="35" height="20"/> </a>   |  <a href="https://www.microsoft.com/en-us/sql-server">SQL Server</a><a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="sql-server" width="28" height="22"/> </a> 
+
+* <a href="https://public.tableau.com/app/profile/mrankitgupta">Tableau</a><a href="https://public.tableau.com/app/profile/mrankitgupta" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/mrankitgupta/a768d6bf0a001f03327578ae12f8867e4056cbaf/tableau-software.svg" alt="tableau" width="20" height="20"/> </a>  |
+<a href="https://powerbi.microsoft.com/en-us/">Power BI</a><a href="https://powerbi.microsoft.com/en-us/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/mrankitgupta/a768d6bf0a001f03327578ae12f8867e4056cbaf/power-bi.svg" alt="powerbi" width="20" height="20"/> </a>
+
+* <a href="https://github.com/mrankitgupta/Statistics-for-Data-Science-using-Python">Statistics</a><a href="https://github.com/mrankitgupta/Statistics-for-Data-Science-using-Python" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/66DaysOfData/c8c040f1c85d921db317152567f331354446286a/statistics-21.svg" alt="Statistics" width="25" height="25"/> </a>
+
+
 ## Steps Followed in this project
 
-1. Learned about AIMS grid for project planning.
+<!-- 1. Learned about AIMS grid for project planning.
 2. Used MySQL for retrieving the data from the database into Power BI.
 3. Data Cleaning in power query.
 4. Performed ETL process (Extract Transform and Load)
@@ -32,6 +50,80 @@ and success criteria  of our project.
 6. In the currency there were two types of currencies in transactions, performed currency conversion to make all the currency type same
 7. Data Validation
 8. Data Modelling and Visualization.
+ -->
+
+**Step 1: Data Acquisition**
+- Download the data file from the provided links: [db_dump.sql](https://github.com/VarunJain-2001/Sales_Insight/blob/main/db_dump.sql)
+
+**Step 2: Data Preparation**
+- If using MySQL, import the downloaded file (`db_dump.sql`) into your MySQL database.
+- Perform necessary ETL (Extract, Transform, Load) operations to clean and structure the data as needed. This may include removing duplicates, handling missing values, and transforming data types.
+
+**Step 3: Data Analysis Tools Setup**
+- Download and install [Tableau Public](https://www.tableau.com/products/public/download)
+- Download and install [Power BI Desktop](https://powerbi.microsoft.com/en-us/downloads/)
+
+**Step 4: Data Connection**
+- Connect Tableau and PowerBI to your MySQL database or Excel file where you've loaded the data.
+
+**Step 5: Data Analysis in Tableau**
+- Perform data analysis in Tableau and PowerBI. Create visualizations, measures, and dashboards to explore and analyze the data.
+- Utilize the AIMS grid principles for project planning as needed during the analysis.
+
+**Step 6: Currency Conversion (if applicable)**
+- If the data includes multiple currencies in transactions, perform currency conversion to standardize them to a common currency.
+
+**Step 7: Data Validation**
+- Ensure the data is accurate and validated. Double-check calculations, aggregations, and visualizations for correctness.
+
+**Step 8: Data Modeling and Visualization**
+- Continue building data models and visualizations in Tableau and PowerBI to address the analysis goals.
+- Use MySQL or Excel data as a source to create calculated fields and further refine the visualizations.
+
+**Step 9: Save**
+- Save Tableau project file (.twb or .twbx) and PowerBI project file (.pbix) to preserve your analysis and visualization work.
+
+By following these steps, you can effectively plan, prepare, and perform data analysis using Tableau, MySQL, and Power BI, combining the elements of data cleaning, ETL, visualization, and validation into a structured workflow.
+
+
+## Data Analysis Using SQL
+  
+1. Show all customer records
+
+    `SELECT * FROM customers;`
+
+1. Show total number of customers
+
+    `SELECT count(*) FROM customers;`
+
+1. Show transactions for Chennai market (market code for chennai is Mark001)
+
+    `SELECT * FROM transactions where market_code='Mark001';`
+
+1. Show distrinct product codes that were sold in chennai.
+
+    `SELECT distinct product_code FROM transactions where market_code='Mark001';`
+
+1. Show transactions where currency is US dollars.
+
+    `SELECT * from transactions where currency="USD"`
+
+1. Show transactions in 2020 join by date table.
+
+    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
+
+1. Show total revenue in year 2020.
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
+	
+1. Show total revenue in year 2020, January Month.
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
+
+1. Show total revenue in year 2020 in Chennai.
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020and transactions.market_code="Mark001";`
+
 
 ## Major Changes/ Customizations Made
 

@@ -78,6 +78,18 @@ and success criteria  of our project.
  
   <img src="https://github.com/NotRamm/Sales-Insight-Dashboard-using-Power-BI/blob/master/Screenshots/Sales%20Insight%20-%20Page%20Profit%20Analysis.png" class="center">
 
+ #### Sales Dashboard
+ 
+ -----------
+ 
+  <img src="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Data%20Visualization/Tableau/Sales/salesDashboard.png" class="center">
+
+ #### Profit Dashboard
+ 
+ -----------
+ 
+  <img src="https://github.com/VarunJain-2001/Sales_Insight/blob/main/Data%20Visualization/Tableau/Profit/profitDashboard.png" class="center">
+
 
 
 

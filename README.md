@@ -12,7 +12,7 @@ Humans are not comfortable in consuming numbers from excel files, which is obvio
 ## Solution
 
 Sales director of the AltiQ hardware, decided to build a PowerBI Dashboard for converting the data into 
-visual representation to make data driven decisions. So, he hired a team of data people to complete this task.
+visual representation to make data driven decisions. 
 
 ### AIMS Grid
 
